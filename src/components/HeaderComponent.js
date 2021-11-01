@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import { Navbar, NavbarBrand,Nav,NavbarToggler,Collapse,NavItem,Jumbotron,Button,Modal,ModalHeader,
-    ModalBody, FormGroup, Label, Input,Label } from 'reactstrap';
+    ModalBody, FormGroup, Label, Input,Form} from 'reactstrap';
 import {NavLink} from "react-router-dom"
 
 class Header extends Component{
@@ -105,7 +105,7 @@ class Header extends Component{
                                     Remember me
                                 </Label>
                             </FormGroup>
-                            <Button type="submit" value="submit" color="bg-primary">Login</Button>
+                            <Button type="submit" value="submit" color="primary">Login</Button>
                         </Form>
                     </ModalBody>
                 </Modal>
