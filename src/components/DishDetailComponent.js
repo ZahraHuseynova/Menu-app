@@ -1,6 +1,7 @@
 import React from "react";
 import { Card,CardImg,CardText,CardBody,CardTitle,BreadcrumbItem,Breadcrumb } from 'reactstrap';
 import {Link} from "react-router-dom"
+import CommentForm from "./CommentForm";
    
     function RenderDish({dish}) {
             return (
@@ -37,6 +38,7 @@ import {Link} from "react-router-dom"
                         {commentListItem}
 
                     </ul>
+                    <CommentForm/>
                 </div>
             )
             
@@ -45,7 +47,9 @@ import {Link} from "react-router-dom"
                 <div></div>
             );
 
-        };    
+        }; 
+        
+        
     };
     
 
@@ -67,6 +71,7 @@ import {Link} from "react-router-dom"
                     <div className="row">
                         <RenderDish dish={props.dish}/>
                         <RenderComments comments={props.comments}/>
+                        
                     </div>
                 </div>
             )
@@ -77,5 +82,7 @@ import {Link} from "react-router-dom"
         }
         
     }
+
+    
 
 export default DishDetail;
